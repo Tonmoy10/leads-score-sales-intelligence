@@ -23,18 +23,27 @@ A Random Forest model predicts conversion probability and converts it into a 1 t
 
 ## Repository structure
 notebooks/ exploratory work behind the pipeline
+
 **01_data_cleaning.ipynb:** initial data cleaning and inspection
+
 **02_data_preprocessing.ipynb:** encoding, scaling, feature prep for modelling
+
 **03_clustering.ipynb:** K-Means exploration and cluster definition
+
 **04_lead_scoring.ipynb:** Random Forest and logistic regression training and scoring
 
 src/
+
 **data_ingestion.py:** pulls the raw data from Kaggle
+
 **preprocess.py:** shared cleaning and feature engineering functions
+
 **train.py:** trains the tuned Random Forest
+
 **score.py:** runs clustering and scores new leads
 
 **main.py:** entry point, routes to train.py or score.py
+
 **config.py:** paths and parameters
 
 The notebooks were where the actual modelling decisions got made: which features mattered, how many clusters made sense, what the tuned Random Forest parameters should be. The scripts in src/ are the production version of those same decisions, rebuilt to run without anyone opening a notebook.
