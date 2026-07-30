@@ -3,6 +3,7 @@ import sys
 import os
 import preprocess
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
 import pickle
 from sklearn.cluster import KMeans
 
@@ -47,4 +48,5 @@ if __name__=="__main__":
         pickle.dump(kmeans,k)
 
 
+    print(classification_report(y_test,rf.predict(X_test)))
     print("Execution Successful!")
