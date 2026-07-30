@@ -27,6 +27,9 @@ MODEL_PATH = os.path.join(MODELS_DIR,"tuned_rf_model.pkl")
 #Scalar Path
 SCALAR_PATH = os.path.join(MODELS_DIR,"standard_scaler.pkl")
 
+#KMeans Path
+KMEANS_PATH = os.path.join(MODELS_DIR,"kmeans_model.pkl")
+
 #Defining random seed to keep scripts deterministic
 RANDOM_SEED = 42
 

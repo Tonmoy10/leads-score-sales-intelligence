@@ -20,3 +20,5 @@ filename = [x for x in os.listdir(path) if x.endswith(".csv")][0]
 
 #Copying the dataset to a separate directory named "data"
 shutil.copy(src=os.path.join(path,filename),dst=config.RAW_DATA_PATH)
+
+print("Data Fetching SUccessful!")
